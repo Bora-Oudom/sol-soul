@@ -46,10 +46,9 @@ body .pixel-text {
 body .btn {
   color: #fff;
   background-color: #4e1290;
-  font-size: 1.75rem !important;
+  font-size: 14px;
   font-weight: 800;
-  padding: .5rem 1.8rem;
-  letter-spacing: 2px;
+  padding: 6px 20px;
   border-radius: 5px;
 }
 
@@ -57,7 +56,7 @@ body .p-title {
   font-family: "DM Sans", sans-serif;
   background: #4e1290;
   border-radius: 3px;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 0.6rem;
@@ -86,7 +85,7 @@ body .p-title {
 
 .nft_coll .nft_coll_info {
   text-align: center;
-  padding: 20px 0 10px;
+  padding: 1rem 0;
   position: relative;
 }
 
@@ -111,8 +110,11 @@ body .p-title {
 }
 
 .navbar {
-  position: fixed;
   background-color: #161d30;
+  position: fixed !important;
+  z-index: 1001;
+  height: 90px;
+  width: 100%;
 }
 
 .navbar .nav-logo img {
@@ -133,20 +135,34 @@ body .p-title {
           align-items: center;
 }
 
-.navbar .nav-menu .nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.navbar .nav-menu li {
+  margin-right: 2rem;
 }
 
-.navbar .nav-menu .nav-link a {
-  padding: 1.8rem 1rem;
+.navbar .menu-btn {
+  display: none;
 }
 
-.navbar .nav-menu .btn {
-  font-size: 0.8rem !important;
-  padding: 6px 20px;
-  word-spacing: -2px;
+@media screen and (max-width: 1200px) {
+  .nav-menu li {
+    margin-right: 1rem !important;
+  }
+  .nav-menu li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-menu li {
+    display: none;
+  }
+  .menu-btn {
+    display: block !important;
+    background: #4e1290;
+    padding: 5px 10px;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
 }
 
 .home {
@@ -165,7 +181,6 @@ body .p-title {
 
 .home .row img {
   width: 50%;
-  margin-left: 7rem;
 }
 
 .home .row h6 span {
@@ -195,7 +210,12 @@ body .p-title {
 }
 
 .home .row .home-btn {
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+.home .row .home-btn .btn {
+  font-size: 28px;
+  letter-spacing: 2px;
 }
 
 .home .row a {
@@ -206,11 +226,30 @@ body .p-title {
   background-image: url("../img/subheader-dark.jpg");
   text-align: center;
   overflow: hidden;
-  padding: 70px 0 100px 0;
+  padding: 4.375rem 0 6.25rem;
 }
 
 .header h1 {
-  font-size: 3rem !important;
+  font-size: 3rem;
+}
+
+.attributes {
+  background: #161d30;
+  padding: 5.7rem 0;
+}
+
+.attributes .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attributes .row img {
+  margin: 1rem auto;
+}
+
+.attributes .row a {
+  color: #fcd95a;
 }
 
 .main {
@@ -229,60 +268,70 @@ body .p-title {
 }
 
 .main .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.main .container .row .col-md-4 {
-  margin-right: 5rem;
-}
-
 .main .container .row img {
-  max-height: 18.75rem;
+  margin: 0px auto 20px;
+  max-height: 300px;
 }
 
-.main .container .row .col-md-8 {
+.main .container .row .pricing-s1 {
   background: #21273e;
-  width: 50%;
-  padding: 2rem 0;
   border-radius: .8rem;
+  padding: 2rem 0;
 }
 
-.main .container .row .col-md-8 .top p {
+.main .container .row .pricing-s1 .top h2 {
+  font-size: 32px;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+.main .container .row .pricing-s1 .top p {
   font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.main .container .row .col-md-8 .mid {
+.main .container .row .pricing-s1 .mid {
   background: #7540ab;
 }
 
-.main .container .row .col-md-8 .mid .price {
-  padding: 1rem;
+.main .container .row .pricing-s1 .mid .price {
   color: #fff;
   font-size: 3rem;
-  font-weight: 400;
 }
 
-.main .container .row .col-md-8 .mid .price .coin {
+.main .container .row .pricing-s1 .mid .price .month {
   font-size: 1rem;
 }
 
-.main .container .row .col-md-8 .bottom {
+.main .container .row .pricing-s1 .bottom ul {
   margin: 2rem 0;
+  padding: 0px;
 }
 
-.main .container .row .col-md-8 .bottom .fa-check {
+.main .container .row .pricing-s1 .bottom ul li {
+  padding: 10px 30px;
+}
+
+.main .container .row .pricing-s1 .bottom ul li .fa-check {
   color: #7540ab;
-  padding: .5rem;
+  margin-right: 10px;
 }
 
-.main .container .row .col-md-8 .action {
+.main .container .row .pricing-s1 .action {
   border-top: solid 1px rgba(255, 255, 255, 0.2);
   padding-top: 2rem;
+}
+
+.main .container .row .pricing-s1 .action .btn {
+  font-size: 24px;
+  padding: 5px 30px;
+  letter-spacing: 2px;
 }
 
 .feature-box {
@@ -290,42 +339,35 @@ body .p-title {
   padding: 5.6rem 0;
 }
 
-.feature-box .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.feature-box .f-boxed {
+.f-boxed {
   background: #21273e;
   padding: 3rem;
   margin-bottom: 2rem;
   border-radius: 6px;
 }
 
-.feature-box .f-boxed:hover {
+.f-boxed:hover {
   background: #7540ab;
   -webkit-transition: .7s;
   transition: .7s;
 }
 
-.feature-box .f-boxed h4 {
+.f-boxed h4 {
+  font-size: 20px;
   padding-bottom: 1rem;
 }
 
-.feature-box .f-boxed .social-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.f-boxed p {
+  margin-bottom: 20px;
+}
+
+.f-boxed .social-btn {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
 
-.feature-box .f-boxed .social-btn img {
+.f-boxed .social-btn img {
   width: 4rem;
 }
 
@@ -351,22 +393,19 @@ body .p-title {
 
 .d-coll {
   background: #161d30;
-  padding: 5.6rem 0;
+  padding-bottom: 5.6rem;
 }
 
 .d-coll .d-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .d-coll .d-nav li {
+  font-weight: 800;
+  display: inline-block;
+  margin: 5px;
   background: #21273e;
   border-radius: 3px;
-  margin: 0 .3rem;
   padding: .5rem 1rem;
   cursor: pointer;
 }
@@ -383,46 +422,45 @@ body .p-title {
   color: #fff;
 }
 
-.d-coll .d-content {
-  padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.d-coll .d-content .nft-item {
+.d-coll .nft-item {
   background: #575e77;
   border-radius: 15px;
   padding: 20px;
-  margin: 0 1rem;
+  margin-bottom: 25px;
 }
 
-.d-coll .d-content .nft-item .nft-item-wrap {
+.d-coll .nft-item .nft-item-wrap {
   margin-bottom: 20px;
+  width: 100%;
 }
 
-.d-coll .d-content .nft-item .nft-item-wrap img {
-  width: 10rem;
+.d-coll .nft-item .nft-item-wrap img {
+  width: 100%;
 }
 
-.d-coll .d-content .nft-item .nft-item-price {
-  padding: .5rem 0;
+.d-coll .nft-item .nft-item-info a {
+  font-weight: bold;
+}
+
+.d-coll .nft-item .nft-item-info h4 {
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: normal;
+}
+
+.d-coll .nft-item .nft-item-price {
+  font-size: 14px;
+  font-weight: 600;
   color: #9fa4dd;
 }
 
-.d-coll .d-content .nft-item .nft-item-price span {
+.d-coll .nft-item .nft-item-price span {
   color: #fcd95a;
 }
 
 .stats {
   background: #161d30;
-  padding: 5.6rem 0;
 }
 
 .stats .row {
@@ -447,7 +485,7 @@ body .p-title {
 }
 
 .stats .row .col-md-6 .de-count {
-  padding: 20px 0 10px 10px;
+  padding: 20px;
 }
 
 .stats .row .col-md-6 h3 {
@@ -458,7 +496,6 @@ body .p-title {
 
 .stats .row .col-md-6 h5 {
   font-size: 14px;
-  font-weight: 500;
 }
 
 .roadmap {
@@ -466,53 +503,31 @@ body .p-title {
   padding: 5.6rem 0;
 }
 
-.roadmap .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.roadmap .container img {
-  margin: 0 auto;
-}
-
 .video-section {
   background: #161d30;
   padding: 5.6rem 0;
 }
 
-.video-section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.video-section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.video-section .container .artical {
-  width: 41%;
+.video-section .row iframe {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-.video-section .container iframe {
-  margin: 0 3rem;
-}
-
-.video-section .container .become img {
-  padding-top: 2rem;
+.video-section .row img {
+  margin-top: 1rem;
+  max-width: 100%;
 }
 
 .faq-section {
   background: #161d30;
-  padding: 5.6rem 0;
+  padding-bottom: 5.6rem;
 }
 
 .faq-section .container h3 {
@@ -557,17 +572,29 @@ footer .widget {
 
 footer .widget h5 {
   margin-bottom: 1.25rem;
-  font-size: 1.12rem !important;
+  font-size: 1.12rem;
+}
+
+footer .widget a {
+  color: #fcd95a;
+}
+
+footer .widget ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .widget ul li {
+  margin: 5px 0;
+}
+
+footer .widget ul li a {
+  color: #9fa4dd !important;
+  font-weight: lighter;
 }
 
 footer .widget p {
   margin-bottom: 1.25rem;
-}
-
-footer .widget li a {
-  margin: 5px 0;
-  color: #9fa4dd !important;
-  font-weight: lighter;
 }
 
 footer .widget img {

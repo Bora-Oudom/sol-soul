@@ -57,17 +57,16 @@ body{
     .btn{
         color: $text-color;
         background-color: $secondary-color;
-        font-size: 1.75rem !important;
+        font-size: 14px;
         font-weight: 800;
-        padding: .5rem 1.8rem;
-        letter-spacing: 2px;     
+        padding: 6px 20px;     
         border-radius: 5px;
     }
     .p-title {
         font-family: $body-font;
         background: $secondary-color;
         border-radius: 3px;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         font-weight: bold;
         letter-spacing: 2px;
         line-height: 0.6rem;
@@ -96,7 +95,7 @@ body{
     }
     .nft_coll_info{
         text-align: center;
-        padding: 20px 0 10px;
+        padding: 1rem 0;
         position: relative;
         h4{
             font-size: 1rem;
@@ -104,15 +103,13 @@ body{
         span{
             font-size:0.8rem;
             color: $main-text;
-        }
-        
+        }  
     }
 }
 // End Global coll-item Style
 
 // Start Global artical Style
 .artical{
-    
     h2{
         margin: 2rem 0;
         font-size: 2.3rem;
@@ -125,35 +122,56 @@ body{
 }
 // End Global artical Style
 
+
 // Start Navbar Style
-.navbar{
-    position:fixed;
+ .navbar{
     background-color: $background-color;
-    .nav-logo {       
-        img{
+    position: fixed !important;
+    z-index: 1001;
+    height: 90px;
+    width: 100%;
+     .nav-logo {       
+         img{
             width: 5.6rem;
-        }       
-        span{
-            font-size: 2.25rem;
-            letter-spacing: 1px;
-        };
+         }       
+         span{
+             font-size: 2.25rem;
+             letter-spacing: 1px;
+         }
     }
     .nav-menu {
         display: flex;
         align-items: center;
-        .nav-link{
-            display: flex;
-            a{
-                padding: 1.8rem 1rem;
-            }
+         li{
+             margin-right: 2rem;
+         }
+    }   
+    .menu-btn{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 1200px){
+    .nav-menu li{
+        margin-right: 1rem !important;
+        a{
+            font-size: 0.75rem;
         }
-        .btn{
-            font-size: 0.8rem !important;
-            padding: 6px 20px;
-            word-spacing: -2px;
-        }
-    }      
+    }
 }
+@media screen and (max-width: 990px){
+    .nav-menu li{
+        display: none;
+    }
+    .menu-btn {
+            display: block !important;
+            background: $secondary-color;
+            padding: 5px 10px;
+            margin-left: 2rem;
+            cursor: pointer;
+    }
+}
+    
 // End Navbar Style
 
 // Start Home Style
@@ -165,7 +183,6 @@ body{
          padding: 15rem 0;
         img{
             width: 50%;
-            margin-left:7rem ;
         }
             h6 span{
                 color: $text-highlight;
@@ -193,7 +210,11 @@ body{
             }
             
             .home-btn{
-                margin: 2rem 0;
+                margin: 1rem 0;
+                .btn{
+                    font-size: 28px;
+                    letter-spacing: 2px;
+                }
             }   
             a{   
                 font-size: 1.12rem;
@@ -208,19 +229,33 @@ body{
     background-image: url("../img/subheader-dark.jpg");
     text-align: center;
     overflow: hidden;
-    padding: 70px 0 100px 0;
+    padding: 4.375rem 0 6.25rem;
     h1{
-        font-size: 3rem !important;
+        font-size: 3rem;
     }
 }
 //End Attribute Page Header Style
+
+.attributes{
+    background: $background-color;
+    padding: 5.7rem 0;
+    .row{
+        align-items: center;
+        img{
+            margin: 1rem auto;
+        }
+        a{
+        color: $text-highlight;
+        }
+    }
+    
+}
 
 //Start Main Style
 .main{
     background: $background-color;
     padding: 5.7rem 0;
     .container{
-        
         h2{
             margin-bottom: .6rem;
             font-size: 2.25rem;
@@ -230,48 +265,64 @@ body{
             color: $main-text;
         }
         .row{
-            display: flex;
             align-items: center;
-            .col-md-4{
-                margin-right: 5rem;
-            }
             img{
-                max-height: 18.75rem;
-                
+                margin: 0px auto 20px;
+                max-height: 300px;
             }
-            .col-md-8{
+             .pricing-s1{
                 background: $cart-color;
-                width: 50%;
-                padding: 2rem 0;
-                border-radius: .8rem;
-                .top{
-                   p{
-                       font-size: 1.1rem;
-                   }
-                }
+                 border-radius: .8rem;
+                 padding: 2rem 0;
+                 .top{
+                 
+                    h2{
+                        font-size: 32px;
+                        line-height: 1em;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        margin: 0;
+                        padding: 0;
+                    }
+                 }
                 .mid{
-                    background: $primary-color;
+                    background: $primary-color;  
+                   
                     .price{
-                        padding: 1rem;
                         color: $text-color;
                         font-size: 3rem;
-                        font-weight: 400;
-                        .coin{
+                         
+                        .month{
                             font-size: 1rem;
+                             
                         }
                     }
                 }
                 .bottom{
-                    margin: 2rem 0;
-                    .fa-check{
-                        color: $primary-color;
-                        padding: .5rem;
-                    }
+                    ul{
+                        margin: 2rem 0;
+                        padding: 0px;
+                        li{
+                            padding: 10px 30px;
+                            .fa-check{
+                                color: $primary-color;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                    }   
                 }
-                .action{
+                 .action{
                     border-top: solid 1px rgba(255, 255, 255, .2);
                     padding-top: 2rem;
-                }
+                    .btn{
+                        font-size: 24px; 
+                        padding: 5px 30px; 
+                        letter-spacing: 2px;
+                    }
+                 }
             }      
         }
     }
@@ -282,9 +333,7 @@ body{
 .feature-box{
     background:$background-color;
     padding: 5.6rem 0;
-    .row{
-        display: flex;
-        align-items: center;
+    
     }
     .f-boxed{
         background: $cart-color;
@@ -296,16 +345,19 @@ body{
             transition: .7s;
         }
         h4{
+            font-size: 20px;
             padding-bottom: 1rem;
         }
+        p{
+            margin-bottom: 20px;
+        }
         .social-btn{
-            display: flex;
             justify-content:start;
             img{
                 width: 4rem;
             }
         }
-    }
+    
 }
 //End feature-box Style
 
@@ -328,17 +380,17 @@ body{
 //Start Attribute Page d-coll Style
 .d-coll{
     background: $background-color;
-    padding: 5.6rem 0;
-    
+    padding-bottom: 5.6rem;
     .d-nav{
-        display: flex;
-        justify-content: center;
+        text-align: center;
         li{
+            font-weight: 800;
+            display: inline-block;
+            margin: 5px;
             background: $cart-color;
             border-radius: 3px;
-            margin: 0 .3rem;
             padding: .5rem 1rem;
-            cursor: pointer;
+             cursor: pointer;
             span{
                 color: #686c7c; 
             }
@@ -350,38 +402,46 @@ body{
             }     
         }
     }
-    .d-content{
-        padding-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
         .nft-item{  
             background: #575e77;
             border-radius: 15px;
             padding: 20px;
-            margin: 0 1rem;
+            margin-bottom: 25px;
             .nft-item-wrap{
                 margin-bottom: 20px;
+                width: 100%;
                 img{
-                    width: 10rem;
+                    width: 100%;
+                }
+            }
+            .nft-item-info{
+                a{
+                    font-weight: bold;
+                }
+                h4{
+                    font-weight: 800;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    letter-spacing: normal;
                 }
             }
             .nft-item-price{
-                padding: .5rem 0;
+                font-size: 14px;
+                font-weight: 600;
                 color: $main-text;
                 span{
                     color: $text-highlight;
                 }
             }
         }
-    }
+    
 }
 //End Attribute Page d-coll Style
 
 //Sart stats Style
 .stats{
     background: $background-color;
-    padding: 5.6rem 0;
     .row{
         align-items: center;
         .col-md-5 h2{
@@ -393,21 +453,21 @@ body{
         .nft_coll{
             margin: .9rem;
         }
-        .col-md-6{
-            margin-bottom: 2rem;
-            .de-count{
-                padding: 20px 0 10px 10px;
-            }
-            h3{
-                font-size: 2.25rem;
-                margin-bottom: 15px;
-                line-height: .5em;
-            }    
-            h5{
-                font-size: 14px;
-                font-weight: 500;
-            }
-        }
+         .col-md-6{
+             margin-bottom: 2rem;
+             .de-count{
+                 padding: 20px;
+             }
+             h3{
+                 font-size: 2.25rem;
+                 margin-bottom: 15px;
+                 line-height: .5em;
+             }    
+             h5{
+                 font-size: 14px;
+       
+             }
+         }
     }
 }
 //End stats Style
@@ -416,14 +476,8 @@ body{
 .roadmap{
     background: $background-color;
     padding: 5.6rem 0;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img{
-            margin: 0 auto;
-        }
-    }
+    
+    
 }
 // End roadmap Style
 
@@ -431,18 +485,16 @@ body{
 .video-section{
     background:$background-color;
     padding: 5.6rem 0;
-    .container{
-        display: flex;
-        justify-content: space-around;
+    .row{
         align-items: center;
-        .artical{
-            width: 41%;
-        }
         iframe{
-            margin: 0 3rem;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
         }
-        .become img{
-            padding-top: 2rem;
+        img{
+            margin-top: 1rem;
+            max-width: 100%;
         }
     }
 }
@@ -451,7 +503,7 @@ body{
 // Start faq-section Style
 .faq-section{
     background: $background-color;
-    padding: 5.6rem 0;
+    padding-bottom: 5.6rem;
     .container{
         h3{
             font-size: 22px;
@@ -487,21 +539,31 @@ body{
 footer{
     background: $cart-color;
     padding-top: 5.6rem;
+   
     .widget{
         margin-bottom: 1.8rem;
         padding-bottom: 1.8rem;
         h5{
             margin-bottom: 1.25rem;
-            font-size: 1.12rem !important;
+            font-size: 1.12rem;
+        }
+        a{
+            color: $text-highlight;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                margin: 5px 0;
+                a{
+                    color: $main-text !important;
+                    font-weight: lighter;
+                }
+            }
         }
         p{
             margin-bottom: 1.25rem;
         }   
-        li a{
-            margin: 5px 0;
-            color: $main-text !important;
-            font-weight: lighter;
-        }
         img{
             width: 64px;
         };
