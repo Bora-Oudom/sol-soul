@@ -96,7 +96,12 @@ body{
         overflow: hidden;
         border-radius: 10px 10px 0 0;
         img{
+            display: block;
             width: 100%;
+            transition: all .7s ease-in-out;
+            &:hover{
+                transform: scale(1.1); 
+            }
         }
     }
     .nft_coll_info{
