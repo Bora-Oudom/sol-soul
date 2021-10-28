@@ -37,7 +37,9 @@ body{
         line-height: 1.5rem;
         text-decoration: none ;
         font-weight: 800;
-        
+        &:hover{
+            color: $text-color;
+        }
     }
     li{
         list-style: none;
@@ -61,6 +63,10 @@ body{
         font-weight: 800;
         padding: 0.375rem 1.25rem;     
         border-radius: 5px;
+       &:hover{
+            box-shadow: 2px 2px 20px 0px $primary-color;
+            color: $text-color;
+       }
     }
     .p-title {
         font-family: $body-font;
@@ -116,8 +122,7 @@ body{
         line-height: 3rem;
     }
     .btn{
-        font-size: .87rem !important;
-        padding: 0.875rem 2.5rem;
+        padding: .2rem 2rem;
     }
 }
 // End Global artical Style
@@ -143,8 +148,28 @@ body{
         display: flex;
         align-items: center;
          li{
-             margin-right: 2rem;
-         }
+             margin-right: 2rem;  
+            a{
+                position: relative;
+                &:after {    
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: -5px;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                   
+                    left: 0;
+                    position: absolute;
+                    background: $primary-color;
+                    transition: width 1s ease 0s, left 1s ease 0s;
+                    width: 0;
+                }
+                &:hover:after { 
+                    width: 100%; 
+                    left: 0; 
+                }
+            }
+        }
     }   
     .menu-btn{
         display: none;
@@ -401,6 +426,7 @@ body{
 .roadmap{
     background: $background-color;
     padding: 5.6rem 0; 
+
 }
 // End roadmap Style
 
