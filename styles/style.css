@@ -46,9 +46,9 @@ body .pixel-text {
 body .btn {
   color: #fff;
   background-color: #4e1290;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 800;
-  padding: 6px 20px;
+  padding: 0.375rem 1.25rem;
   border-radius: 5px;
 }
 
@@ -65,9 +65,9 @@ body .p-title {
 }
 
 .nft_coll {
-  width: 305.25px;
-  margin-right: 25px;
-  background: #21273e;
+  width: 19rem;
+  margin-right: 1.56rem;
+  background: #292f45;
   border-radius: 0.6rem;
 }
 
@@ -106,7 +106,7 @@ body .p-title {
 
 .artical .btn {
   font-size: .87rem !important;
-  padding: 8px 40px;
+  padding: 0.875rem 2.5rem;
 }
 
 .navbar {
@@ -159,7 +159,7 @@ body .p-title {
   .menu-btn {
     display: block !important;
     background: #4e1290;
-    padding: 5px 10px;
+    padding: 5.625rem 0.625rem;
     margin-left: 2rem;
     cursor: pointer;
   }
@@ -193,7 +193,7 @@ body .p-title {
 
 .home .row h1 {
   font-size: 3.6rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   line-height: 1.2em;
   letter-spacing: -1px;
 }
@@ -214,23 +214,12 @@ body .p-title {
 }
 
 .home .row .home-btn .btn {
-  font-size: 28px;
+  font-size: 1.75rem;
   letter-spacing: 2px;
 }
 
 .home .row a {
   font-size: 1.12rem;
-}
-
-.header {
-  background-image: url("../img/subheader-dark.jpg");
-  text-align: center;
-  overflow: hidden;
-  padding: 4.375rem 0 6.25rem;
-}
-
-.header h1 {
-  font-size: 3rem;
 }
 
 .attributes {
@@ -275,17 +264,17 @@ body .p-title {
 
 .main .container .row img {
   margin: 0px auto 20px;
-  max-height: 300px;
+  max-height: 18.75rem;
 }
 
 .main .container .row .pricing-s1 {
-  background: #21273e;
+  background: #292f45;
   border-radius: .8rem;
   padding: 2rem 0;
 }
 
 .main .container .row .pricing-s1 .top h2 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1em;
   margin-bottom: 0;
 }
@@ -315,12 +304,12 @@ body .p-title {
 }
 
 .main .container .row .pricing-s1 .bottom ul li {
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
 }
 
 .main .container .row .pricing-s1 .bottom ul li .fa-check {
   color: #7540ab;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .main .container .row .pricing-s1 .action {
@@ -329,8 +318,8 @@ body .p-title {
 }
 
 .main .container .row .pricing-s1 .action .btn {
-  font-size: 24px;
-  padding: 5px 30px;
+  font-size: 1.5rem;
+  padding: 0.312rem 1.875rem;
   letter-spacing: 2px;
 }
 
@@ -340,7 +329,7 @@ body .p-title {
 }
 
 .f-boxed {
-  background: #21273e;
+  background: #292f45;
   padding: 3rem;
   margin-bottom: 2rem;
   border-radius: 6px;
@@ -353,12 +342,12 @@ body .p-title {
 }
 
 .f-boxed h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-bottom: 1rem;
 }
 
 .f-boxed p {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .f-boxed .social-btn {
@@ -391,74 +380,6 @@ body .p-title {
   padding: 0 10rem;
 }
 
-.d-coll {
-  background: #161d30;
-  padding-bottom: 5.6rem;
-}
-
-.d-coll .d-nav {
-  text-align: center;
-}
-
-.d-coll .d-nav li {
-  font-weight: 800;
-  display: inline-block;
-  margin: 5px;
-  background: #21273e;
-  border-radius: 3px;
-  padding: .5rem 1rem;
-  cursor: pointer;
-}
-
-.d-coll .d-nav li span {
-  color: #686c7c;
-}
-
-.d-coll .d-nav .active {
-  background: #7540ab !important;
-}
-
-.d-coll .d-nav .active span {
-  color: #fff;
-}
-
-.d-coll .nft-item {
-  background: #575e77;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 25px;
-}
-
-.d-coll .nft-item .nft-item-wrap {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.d-coll .nft-item .nft-item-wrap img {
-  width: 100%;
-}
-
-.d-coll .nft-item .nft-item-info a {
-  font-weight: bold;
-}
-
-.d-coll .nft-item .nft-item-info h4 {
-  font-weight: 800;
-  font-size: 15px;
-  margin-bottom: 5px;
-  letter-spacing: normal;
-}
-
-.d-coll .nft-item .nft-item-price {
-  font-size: 14px;
-  font-weight: 600;
-  color: #9fa4dd;
-}
-
-.d-coll .nft-item .nft-item-price span {
-  color: #fcd95a;
-}
-
 .stats {
   background: #161d30;
 }
@@ -470,10 +391,10 @@ body .p-title {
 }
 
 .stats .row .col-md-5 h2 {
-  margin-bottom: 10px;
-  font-size: 36px;
+  margin-bottom: 0.625rem;
+  font-size: 2.25rem;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 2.875rem;
 }
 
 .stats .row .nft_coll {
@@ -485,17 +406,17 @@ body .p-title {
 }
 
 .stats .row .col-md-6 .de-count {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .stats .row .col-md-6 h3 {
   font-size: 2.25rem;
-  margin-bottom: 15px;
+  margin-bottom: 0.9rem;
   line-height: .5em;
 }
 
 .stats .row .col-md-6 h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .roadmap {
@@ -531,8 +452,8 @@ body .p-title {
 }
 
 .faq-section .container h3 {
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 1.375rem;
+  margin-bottom: 1.56rem;
 }
 
 .faq-section .container .accordion .accordion-item {
@@ -561,7 +482,7 @@ body .p-title {
 }
 
 footer {
-  background: #21273e;
+  background: #292f45;
   padding-top: 5.6rem;
 }
 
@@ -585,7 +506,7 @@ footer .widget ul {
 }
 
 footer .widget ul li {
-  margin: 5px 0;
+  margin: 0.3rem 0;
 }
 
 footer .widget ul li a {
@@ -598,12 +519,12 @@ footer .widget p {
 }
 
 footer .widget img {
-  width: 64px;
+  width: 4rem;
 }
 
 .subfooter {
   border-top: solid 1px rgba(255, 255, 255, 0.2);
-  background: #21273e;
+  background: #292f45;
   padding: 1rem;
 }
 
@@ -614,7 +535,168 @@ footer .widget img {
 }
 
 .subfooter img {
+  height: 3rem;
+  margin-right: 0.9rem;
+}
+
+.header {
+  background-image: url("../img/subheader-dark.jpg");
+  text-align: center;
+  padding: 10rem 0 6.25rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.d-coll {
+  background: #161d30;
+  padding-bottom: 5.6rem;
+}
+
+.d-coll .d-nav {
+  text-align: center;
+}
+
+.d-coll .d-nav li {
+  font-weight: 800;
+  display: inline-block;
+  margin: 0.3rem;
+  background: #292f45;
+  border-radius: 3px;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.d-coll .d-nav li span {
+  color: #686c7c;
+}
+
+.d-coll .d-nav .active {
+  background: #7540ab !important;
+}
+
+.d-coll .d-nav .active span {
+  color: #fff;
+}
+
+.d-coll .nft-item {
+  background: #575e77;
+  border-radius: .9rem;
+  padding: 1.25rem;
+  margin-bottom: 1.56rem;
+}
+
+.d-coll .nft-item .nft-item-wrap {
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.d-coll .nft-item .nft-item-wrap img {
+  width: 100%;
+}
+
+.d-coll .nft-item .nft-item-info a {
+  font-weight: bold;
+}
+
+.d-coll .nft-item .nft-item-info h4 {
+  font-weight: 800;
+  font-size: .9rem;
+  margin-bottom: 5px;
+  letter-spacing: normal;
+}
+
+.d-coll .nft-item .nft-item-price {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #9fa4dd;
+}
+
+.d-coll .nft-item .nft-item-price span {
+  color: #fcd95a;
+}
+
+.roadmap-section {
+  background: #161d30;
+  padding: 5.6rem;
+}
+
+.roadmap-section li {
+  background: #1c223e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.roadmap-section li .pixel-text {
+  color: #fcd95a;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.roadmap-section li .act-list-text {
+  margin-top: 8px;
+  padding-right: 100px;
+}
+
+.roadmap-section li .act-list-text h4 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: normal;
+}
+
+.roadmap-section .act-follow {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.roadmap-section .act-follow .pixel-text {
+  color: #fcd95a;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.roadmap-section .act-follow .act-list-text {
+  margin-top: 8px;
+  padding-right: 100px;
+  position: relative;
+}
+
+.roadmap-section .act-follow .act-list-text h4 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: normal;
+}
+
+.roadmap-section .act-follow .act-list-text ul li {
+  background: #22274b;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.roadmap-section .act-follow .act-list-text ul li .pixel-text {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.roadmap-section .act-follow .act-list-text::after {
+  content: "\f00c";
+  color: #7366f0;
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 30px;
+  top: 0;
+  font-size: 26px;
+  background: #fff;
   height: 48px;
-  margin-right: 15px;
+  width: 48px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=style.css.map */
