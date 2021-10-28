@@ -130,7 +130,6 @@ body .p-title {
   background-color: #161d30;
   position: fixed !important;
   z-index: 1001;
-  height: 90px;
   width: 100%;
 }
 
@@ -199,7 +198,7 @@ body .p-title {
   .menu-btn {
     display: block !important;
     background: #4e1290;
-    padding: 5.625rem 0.625rem;
+    padding: .3rem 0.6rem;
     margin-left: 2rem;
     cursor: pointer;
   }

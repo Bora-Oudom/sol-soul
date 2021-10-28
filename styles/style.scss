@@ -138,7 +138,7 @@ body{
     background-color: $background-color;
     position: fixed !important;
     z-index: 1001;
-    height: 90px;
+    
     width: 100%;
      .nav-logo {       
          img{
@@ -196,7 +196,7 @@ body{
     .menu-btn {
             display: block !important;
             background: $secondary-color;
-            padding: 5.625rem 0.625rem;
+            padding: .3rem 0.6rem;
             margin-left: 2rem;
             cursor: pointer;
     }
