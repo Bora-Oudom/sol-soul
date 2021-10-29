@@ -3,13 +3,13 @@ $pixel-font: 'VT323', monospace;
 $tital-font: 'DM Sans', sans-serif;
 $body-font: 'DM Sans', sans-serif;
 
-$primary-color: #5e60ce;
-$secondary-color: #5390d9;
-$background-color: #012a4a;
-$cart-color:#6930c3;
+$primary-color: #E9A6A6;
+$secondary-color: #864879;
+$background-color: #1F1D36;
+$cart-color:#3F3351;
 $text-highlight: rgb(252, 217, 90);
 $text-color:#fff;
-$main-text:#4ea8de;
+$main-text:#adb5bd;
 //End Variable Section
 
 html{
@@ -205,11 +205,11 @@ body{
 
 // Start Home Style
 .home{
-      background: rgba(0, 0, 0, 0) linear-gradient(200deg, #f72585 0%, #4cc9f0 100%);
-    // background: url(../img/background.jpg);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    //   background: rgba(0, 0, 0, 0) linear-gradient(200deg, #f72585 0%, #4cc9f0 100%);
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
         .row{
          display: flex;
