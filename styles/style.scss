@@ -3,13 +3,13 @@ $pixel-font: 'VT323', monospace;
 $tital-font: 'DM Sans', sans-serif;
 $body-font: 'DM Sans', sans-serif;
 
-$primary-color: #7540ab;
-$secondary-color: #4e1290;
+$primary-color: #0077b6;
+$secondary-color: #023e8a;
 $background-color: #161d30;
-$cart-color:#292f45;
+$cart-color:#013a63;
 $text-highlight: rgb(252, 217, 90);
 $text-color:#fff;
-$main-text:#9fa4dd;
+$main-text:#48cae4;
 //End Variable Section
 
 html{
@@ -23,7 +23,6 @@ body{
     font-family: $tital-font !important;
 
     color: $text-color !important;
-
         // Start Global Style
     p{
         color: $main-text;
@@ -206,7 +205,12 @@ body{
 
 // Start Home Style
 .home{
-    background: rgba(0, 0, 0, 0) linear-gradient(200deg, rgb(165, 70, 121) 0%, rgb(117, 64, 171) 100%);
+      background: rgba(0, 0, 0, 0) linear-gradient(200deg, #4895ef 0%, #3a0ca3 100%);
+    // background: url(../img/background.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    
         .row{
          display: flex;
          align-items: center;
@@ -458,14 +462,16 @@ body{
 .faq-section{
     background: $background-color;
     padding-bottom: 5.6rem;
+   
     .container{
         h3{
             font-size: 1.375rem;
             margin-bottom: 1.56rem;
         }
         .accordion{
+         
             .accordion-item {
-                background: $primary-color;
+                background: $cart-color;
                 margin-bottom: 1px;
                 border: none;
                  .accordion-item-header {
