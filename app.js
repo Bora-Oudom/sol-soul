@@ -14,3 +14,14 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     
   });
 });
+
+    //init Scroll Magic 
+    let controller = new ScrollMagic.Controller();
+
+    let scene = new ScrollMagic.Scene({
+      triggerElement: '.home img',
+      triggerHook: .3
+    })
+        .setClassToggle('.navbar', 'fade-in')
+        .addIndicators()
+        .addTo(controller);
